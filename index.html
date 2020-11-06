@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bagshop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'> 
+        <style type="text/css">
+        * {
+             box-sizing: border-box;
+        }
+            #slider {
+                overflow :hidden;
+            }
+            #slider figure {
+                position: relative;
+                width: 500%;
+                margin:0;
+                left: 0;
+                animation: 20s slider infinite;
+            }
+            #slider figure img {
+                width : 20%;
+                float :left;
+            }
+            @keyframes slider {
+                0% {
+                    left:0;
+                }
+                20% {
+                    left: 0;
+                }
+                25% {
+                    left: -100%;
+                }
+                45% {
+                    left : -100%;
+                }
+                50% {
+                    left: -200%;
+                }
+                70% {
+                    left: -200%;
+                }
+                75% {
+                    left: -300%;
+                }
+                95% {
+                    left: -300%;
+                }
+                100% {
+                    left :-400%;
+                }
+            }
+            .flex-container{
+                display: flex;
+                flex-wrap:nowrap;
+            }
+            .company{
+                display: flex;
+                background-color:white ;
+                width:100%;
+                text-align: center;
+                border-style: solid ;
+                border-width: 5px;
+                border-color: red;
+            }
+            .abthover{
+                padding:0%;
+                margin:auto; 
+                color:#ff4500;
+                font-size: 40px;
+                font-family: karla;
+                font-weight:bold;
+                text-decoration: underline red;
+            }
+            .abthover:hover{
+                color: red;
+                text-decoration:underline #ff4500
+            }
+            .column {
+                float: left;
+                width: auto;
+                padding: 10px;
+                height: auto; /* Should be removed. Only for demonstration */
+            }
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .catfon{
+                clear:both;
+                font-size: 15px;
+                color: black;
+                font-weight: bold;
+            }
+            .catfon:hover{
+                color:#3A84DF;
+            }
+            .conthov{
+              color:#FA8072;
+              transition:color 1s;
+            }
+            .conthov:hover{
+                color:#c8362e;
+                border-bottom: 4px solid black;
+            }
+            .abtline{
+                border-bottom: grey 5px;
+                
+            }
+        </style>
+    </head>
+    <body style="margin:0%;background-color:	#FFFF99;">
+            <div class="flex-container">    
+                <div style="text-align:center ; width:100%;height:10%;background-color:red;color:#f5f5f5;font-size:50px;font-family:karla;font-weight: bold;">BAG SHOP</div>
+            </div>
+            <div class="flex-container" style="width: 100%;" >
+                <div class="company"><a href="https://www.vipbags.com/" style="height: auto; max-width: 100%; margin-right: auto; margin-left: auto;padding-top: 7%; "><img style="height: auto; max-width: 100%; margin-right: auto; margin-left: auto; " src="https://user-images.githubusercontent.com/57314038/95216798-1d5c0180-0810-11eb-83dc-e1afe546d3c7.png" ></a></div>
+                <div class="company"><a href="https://www.aristocratbags.in/" style="height: auto; max-width: 100%; margin-right: auto; margin-left: auto; "><img style="height: auto; max-width: 100%; margin-right: auto; margin-left: auto;" src="https://user-images.githubusercontent.com/57314038/95216924-467c9200-0810-11eb-8bbc-3a9d98c808b6.png"></a></div>
+                <div class="company" style="background-color: #0272BC" ><a href="https://shop.skybags.co.in/" style="height: auto; max-width: 100%; margin-right: auto; margin-left: auto;padding-top: 7%; "> <img style="height: auto; max-width: 100%; margin-right: auto; margin-left: auto;" src="https://user-images.githubusercontent.com/57314038/95474826-377a1900-09a3-11eb-958c-5b3520a018cf.png"> </a> </div>
+                <div class="company" ><a href="http://www.americanexcelbag.com/" style="height: auto; max-width: 100%; margin-right: auto; margin-left: auto; "><img style="height: auto; max-width: 100%; margin-right: auto; margin-left: auto;" src="https://user-images.githubusercontent.com/57314038/98378424-00fbf080-206c-11eb-94ba-7b432515ec3c.png"> </a> </div>
+            </div>
+            <div class="flex-container" style="width: 100%;" style=" box-shadow: 5px 5px 8px red;"  >
+                <div style="box-shadow: 5px 5px 8px red; padding:10px;margin: auto; font-family: karla;color:#f5f5f5;text-align: center;background-color: red; font-size: 20px;"><b>Our Major Brands</b></div>
+            </div>
+            <div id="slider">
+                <figure>
+                    <img src="https://www.vipbags.com/uploads/home_page_banners/HPBannerNameImg_1554464145.jpg" height="auto">
+                    <img src="https://user-images.githubusercontent.com/57314038/95658404-c4ee7200-0b37-11eb-8a5a-880ac047ed1d.jpg" height="auto">
+                    <img src="https://user-images.githubusercontent.com/57314038/95658383-a5574980-0b37-11eb-8c05-a32e66f8ee7e.jpg" height="auto">
+                    <img src="https://user-images.githubusercontent.com/57314038/95658372-8658b780-0b37-11eb-8841-79245f72f299.jpg" height="auto">
+                    <img src="https://www.vipbags.com/uploads/home_page_banners/HPBannerNameImg_1554464145.jpg" height="auto">
+                </figure>
+            </div>
+            
+            <div class="flex-container" style="margin-top: 5%; width:20vw;height: 5vw; padding:0%;margin-left:auto;margin-right:auto;border-style:solid;border-width:10px;border-color:red;border-bottom:0;">
+            </div>
+
+            <div class="flex-container" style="margin-top: 0%;">
+                <div style="padding:2% 5%; margin:auto;border-style: solid;border-radius: 23%;border-width: 10px; border-color: red #FA8072;height:auto;width: auto;">
+                    <p class="abthover" style="text-align: center;font-size: 5vw;">ABOUT US</p>
+                    <div style="padding:0%">
+                        <p style="font-size: 3vw;">At <span style="color: red;font-weight: bold;">Bag Shop</span>, we are passionate about bags. We sell durable and <br>functional bags for carrying in the city day in and day out. <br>We want our bags to handle all the things we carry on daily basis.<br><br>
+                        We keep all the types of bags in eye-catching shapes with curves <br>at right place and with so many exciting colours and shades to boot,<br> you might wonder which is more beautiful!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-container" style="margin-top: 5%; width:10vw;height: 20vw; padding:0%;margin-left:auto;margin-right:auto;border-style:solid;border-width:10px;border-color:red;border-bottom:0;border-top: 25px solid red;">
+            </div>
+
+            <div class="flex-container" style="margin-top: 0%;">
+                <div style="padding:2% 5%; margin:auto;border-style: solid;border-radius: 3%;border-width: 10px; border-color: red #FA8072;height:auto;width: auto;">
+                    <p class="abthover" style="text-align: center;font-size: 5vw;">CATEOGORIES</p>
+                    <table width="100%">
+                        <tr>
+                            <td><img src="https://www.vipbags.com//uploads/categoryimages/icons/catIconImghard-luggage-upright.png" style="float: left;"><br><div class="catfon">HARD<br>LUGGAGE<br>UPRIGHT</div><br></td>
+                            <td><img src="https://www.vipbags.com//uploads/categoryimages/icons/catIconImgsoft-luggage-upright.png" style="float: left;"><br><div class="catfon">SOFT<br>LUGGAGE<br>UPRIGHT</div><br></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://www.vipbags.com//uploads/categoryimages/icons/catIconImgduffel-duffel-trolleys.png" style="float: left;" ><br><div class="catfon">DUFFEL<br>TROLLEYS</div><br></td>
+                            <td><img src="https://www.vipbags.com//uploads/categoryimages/icons/catIconImgbackpacks.png" style="float: left;" ><br><div class="catfon">BACKPAKCS</div><br></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://www.vipbags.com//uploads/categoryimages/icons/catIconImgbackpackes-trolleys.png" style="float: left;" ><br><div class="catfon">RUCKSACKS<br></td>
+                            <td><img src="https://www.vipbags.com//uploads/categoryimages/icons/catIconImgbusiness1.png" height="60px" width="60px" style="float:left;" ><br><div class="catfon">BUSINESS</div><br></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="flex-container" style="margin-top: 5%; width:20vw;height: 5vw; padding:0%;margin-left:auto;margin-right:auto;border-style:solid;border-width:10px;border-color:red;border-bottom:0;border-radius: 20%;">
+            </div>
+            <div class="flex-container" style="margin-top: 0%; margin-bottom: 10%;">
+                <div style="padding:2% 5%;margin: auto;border-style: solid;border-radius: 10%;border-width: 10px;border-color: red #FA8072;height: auto;width: auto;">
+                    <p class="abthover" style="text-align: center;font-size: 5vw;">CONTACT US</p>
+                    <div class="flex-container" width="100%" style="padding-top: 15px;border-bottom: 4px solid #C0C0C0">
+                        <div style="font-weight: bolder;font-size:3vw;color: red;width: 30%;">NAME :</div>
+                        <div style="width: 10%;"></div>
+                        <div style="font-weight: bolder;width:50%;font-size:3vw;align-items: right;" class="conthov">BAGSHOP</div>
+                    </div>
+                    
+                    <div class="flex-container" width="100%" style="padding-top: 15px;border-bottom: 4px solid #C0C0C0">
+                        <div style="width:30%;font-weight: bolder;font-size:3vw;color: red;">ADDRESS:</div>
+                        <div style="width:10%;"></div>
+                        <div style="font-weight: bolder;font-size:3vw;width: 50%;" class="conthov">12, SAMTA COMPLEX <br>NEAR BACHAT BHAVAN, <br>RELIEF ROAD <br>AHMEDABAD - 01</div>
+                    </div>
+                    <br>
+                    <div class="flex-container" width="100%" style="padding-top: 15px;border-bottom: 4px solid #C0C0C0">
+                        <div style="font-weight: bolder;font-size:3vw;color: red;width: 30%;">CONTACT NO.:</div>
+                        <div style="width:10%;"></div>
+                        <div style="font-weight: bolder;font-size:3vw;width: 50%;" class="conthov">+91 9824513525 <br>+91 7575013525</div>
+                    </div>
+                    <br>
+                    <div class="flex-container" width="100%" style="padding-top: 15px;">
+                        <div style="font-weight: bolder;font-size:3vw;color: red;width: 30%;">E-MAIL:</div>
+                        <div style="width:10%;"></div>
+                        <div style="font-weight: bolder;font-size:3vw;width: 50%;" class="conthov">BAGSHOP25@GMAIL.<span style="font-size: 1vw;">COM</span></div>
+                    </div>
+                </div>
+            </div>
+    
+
+    </body>
+</html>
